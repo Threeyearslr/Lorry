@@ -1,0 +1,19 @@
+{
+  "name": "lorry",
+  "version": "1.0.0",
+  "description": "主页",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p",
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
+    "dist": "WEBPACK_ENV=online webpack -p"
+  },
+  "author": "lorry",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3"
+  }
+}
